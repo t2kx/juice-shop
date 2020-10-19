@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "kubews-e9f0"
+    labels:
+        app: "kubews-e9f0"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: juiceshop-kubews-e9f0.4f94d9d6190548a598a5.westeurope.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "kubews-e9f0"
+                servicePort: 3000
