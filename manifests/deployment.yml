@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "kubews-e9f0"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "kubews-e9f0"
+  template:
+    metadata:
+      labels:
+        app: "kubews-e9f0"
+    spec:
+      containers:
+        - name: "kubews-e9f0"
+          image: "aksjuice.azurecr.io/kubews"
+          ports:
+          - containerPort: 3000
