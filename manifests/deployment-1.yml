@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "uclkedaaks-1dda"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "uclkedaaks-1dda"
+  template:
+    metadata:
+      labels:
+        app: "uclkedaaks-1dda"
+    spec:
+      containers:
+        - name: "uclkedaaks-1dda"
+          image: "aksjuice.azurecr.io/uclkedaaks"
+          ports:
+          - containerPort: 3000
