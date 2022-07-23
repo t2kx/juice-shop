@@ -95,7 +95,7 @@
     "express-robots-txt": "^0.4.1",
     "express-security.txt": "^2.0.0",
     "file-stream-rotator": "^0.5.5",
-    "file-type": "^12.4.0",
+    "file-type": "^16.5.4",
     "finale-rest": "^1.1.0",
     "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
